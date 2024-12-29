@@ -1,0 +1,15 @@
+DEFER
+defer in the script tag inside the index.html
+defers the loading of the script and doesn't block the loading of the html and gives a little performance boost.
+
+
+Tailwind script in package.json
+Tailwind cli outputs an output css based on the input css 
+--watch (automatically updates the changes)
+
+
+"tw:build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+This will observe changes in files which are configured in tailwind.config files
+And updates output css again.
+
+Which files will be watched for the changes.
