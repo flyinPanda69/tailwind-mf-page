@@ -43,3 +43,12 @@ This allows you to use the .btn class in your HTML to apply all these styles at 
 
 Downside of creating component classes is that it can increase the output.css file size and hence can create increased bundle size.
 So if we are using component based libarary or framework it is recommended to use in-line classes instead.
+
+
+Creating variants:
+group-open: 
+
+
+Peer class
+
+(&) -> Appending our classname in the location when we specify in the plugin
