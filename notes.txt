@@ -13,3 +13,33 @@ This will observe changes in files which are configured in tailwind.config files
 And updates output css again.
 
 Which files will be watched for the changes.
+
+
+With the commit "Building the navbar: Created the first menu item,added classes on hover and transition"
+After additing multiple menu items we have repeated class names for each items.
+
+We can create tailwind components to reuse the repeated classes, by adding them in the input.css file. 
+using apply 
+
+The @apply directive in Tailwind CSS is used to apply a set of utility classes to a CSS rule. 
+It allows you to create custom styles by combining multiple utility classes into a single class, making your CSS more maintainable and reusable.
+
+For example:
+/* Define a custom button style */
+.btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+
+In this example, the .btn class will have the following styles applied:
+
+bg-blue-500: Background color blue
+text-white: White text color
+font-bold: Bold font weight
+py-2: Padding on the y-axis
+px-4: Padding on the x-axis
+rounded: Rounded corners
+This allows you to use the .btn class in your HTML to apply all these styles at once.
+
+Downside of creating component classes is that it can increase the output.css file size and hence can create increased bundle size.
+So if we are using component based libarary or framework it is recommended to use in-line classes instead.
